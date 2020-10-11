@@ -8,7 +8,6 @@ public class IngressJob implements CloudJob{
 
     @Override
     public void execute() {
-        System.out.println("まずログをちゃんとしたまえ");
         return;
     }
 }
