@@ -18,7 +18,7 @@ public class App {
                                           .getDeclaredConstructor()
                                           .newInstance();
             logger.info("{} very well!!", "Logging!");
-            logger.info("日本語はいかがかね？");
+            logger.info("JP not allowed");
             job.execute();
         }
         catch (ClassNotFoundException | NoSuchMethodException | InstantiationException
