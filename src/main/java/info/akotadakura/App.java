@@ -2,7 +2,6 @@ package info.akotadakura;
 
 import java.lang.reflect.InvocationTargetException;
 
-import net.logstash.logback.encoder.LogstashEncoder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,8 +9,9 @@ import info.akotadakura.jobs.CloudJob;
 
 public class App {
 
+    private static final Logger logger = LoggerFactory.getLogger(App.class);
+
     public static void main(String[] args) {
-        Logger logger = LoggerFactory.getLogger(LogstashEncoder.class);
 
         try {
             CloudJob job = (CloudJob)Class.forName("info.akotadakura.jobs.IngressJob")
